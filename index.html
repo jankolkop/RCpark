@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RC Park Petrovice</title>
+
 <style>
 
 *{
@@ -31,19 +41,20 @@ nav a{
 }
 
 header{
-    padding:60px 20px;
+    padding:40px 20px;
     text-align:center;
 }
 
-header img{
+.logo{
     width:100%;
     max-width:700px;
     height:auto;
 }
 
-p{
-    font-size:20px;
+.hero-text{
     margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
 }
 
 .btn{
@@ -67,6 +78,14 @@ h2{
     font-size:35px;
 }
 
+.about{
+    text-align:center;
+    line-height:1.8;
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+}
+
 .gallery{
     display:grid;
     grid-template-columns:1fr;
@@ -78,9 +97,23 @@ h2{
     border-radius:15px;
 }
 
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
 .contact{
     text-align:center;
     line-height:2;
+    font-size:20px;
 }
 
 footer{
@@ -95,6 +128,10 @@ footer{
     grid-template-columns:repeat(3,1fr);
 }
 
+.cards{
+    grid-template-columns:repeat(3,1fr);
+}
+
 nav a{
     margin:0 20px;
 }
@@ -102,3 +139,134 @@ nav a{
 }
 
 </style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#onas">O nás</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#cenik">Ceník</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<div class="hero-text">
+RC auta • Trať • Zábava
+</div>
+
+<br>
+
+<a href="plakat.png" target="_blank" class="btn">
+PLAKÁT
+</a>
+
+<a href="#kontakt" class="btn">
+KONTAKT
+</a>
+
+</header>
+
+<section id="onas">
+
+<h2>O našem RC parku</h2>
+
+<div class="about">
+
+<p>
+Vítejte v RC Parku Petrovice u Moravského Krumlova.
+Místo pro všechny fanoušky RC aut,
+crawlerů, trail RC a offroad zábavy.
+</p>
+
+<br>
+
+<p>
+Přijď si zajezdit, odpočinout
+a užít si přírodu i skvělou atmosféru.
+</p>
+
+</div>
+
+</section>
+
+<section id="galerie">
+
+<h2>Galerie</h2>
+
+<div class="gallery">
+
+<img src="plakat.png">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<section id="cenik">
+
+<h2>Ceník</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Volné ježdění</h3>
+<br>
+<p>Zdarma</p>
+</div>
+
+<div class="card">
+<h3>Závody</h3>
+<br>
+<p>Dle akce</p>
+</div>
+
+<div class="card">
+<h3>Pro všechny</h3>
+<br>
+<p>Děti • Dospělí • Rodiny</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+<div class="contact">
+
+<p>
+📍 GPS:
+49.0098858N, 16.2890258E
+</p>
+
+<p>
+📧 rcpark@email.cz
+</p>
+
+<p>
+📱 Facebook / Instagram
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 RC Park Petrovice
+
+</footer>
+
+</body>
+
+</html>
